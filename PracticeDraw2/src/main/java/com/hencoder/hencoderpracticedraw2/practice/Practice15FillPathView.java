@@ -48,6 +48,8 @@ public class Practice15FillPathView extends View {
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setStrokeWidth(0);
         // 第一处：获取 Path
+        Path dst = new Path();
+        paint.getFillPath(path,dst);
         canvas.drawPath(path, paint);
 
         canvas.save();
